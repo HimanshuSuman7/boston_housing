@@ -25,7 +25,7 @@ boston_dataset.keys()
 ```
 
 When we print the above code, it returns
-```python
+```
 dict_keys(['data', 'target', 'feature_names', 'DESCR'])
 ```
 
