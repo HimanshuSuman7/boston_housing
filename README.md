@@ -153,4 +153,4 @@ print("Model performance for training set.\n",
 
 ### Results
 
-![Output](\contents\result.png)
+<img src="contents/result.png" alt="Output">
