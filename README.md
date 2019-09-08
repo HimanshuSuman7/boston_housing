@@ -66,4 +66,11 @@ We see that the values of MEDV are distributed normally with few outliers.
 
 <img src="contents/exploratory_medv.png" alt="MEDV Output" width="827" height="550">
 
-That's it.
+Now, we will create a correlation matrix using _corr_ function from the pandas dataframe library. We will use heat-map function from the seaborn library to plot the correlation matrix.
+```python
+corr_matrix = boston.corr().round(2)
+sns.heatmap(data=corr_matrix, annot=True)
+plt.show()
+```
+
+<img src="contents/corr_matrix.png" alt="Correlation Matrix" width="827" height="550">
