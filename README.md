@@ -151,4 +151,6 @@ print("Model performance for training set.\n",
       "R2 Score: {}".format(r2))
 ```
 
-### Rssults
+### Results
+
+![Output](\contents\result.png)
