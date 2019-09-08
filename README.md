@@ -74,3 +74,34 @@ plt.show()
 ```
 
 <img src="contents/corr_matrix.png" alt="Correlation Matrix" width="827" height="550">
+
+The degree of association depends on the coefficient of correlation (r) which is also called as Pearson's correlation coefficient. This Pearson's correlation is the measure of linear association and it varies from +1 through 0 to -1. (+1, -1) shows the how much positive or negative correlation it has between two variables. 0 shows the absense of correlation between two relations.
+
+### Observations for feature selection
+
+* To fit a linear regression model, we select those features which have a high correlation with our target variable MEDV. By looking at the correlation matrix we can see that RM has a strong positive correlation with MEDV (0.7) where as LSTAT has a high negative correlation with MEDV(-0.74).
+* An important point in selecting features for a linear regression model is to check for multi-co-linearity. The features RAD, TAX have a correlation of 0.91. These feature pairs are strongly correlated to each other. We should not select both these features together for training the model. Check this for an explanation. Same goes for the features DIS and AGE which have a correlation of -0.75.
+
+Based on the above observations we will RM and LSTAT as our features. Using a scatter plot let’s see how these features vary with MEDV.
+
+```python
+plt.scatter(boston['LSTAT'], boston['MEDV'], marker='o')
+plt.title("LSTAT")
+plt.xlabel('LSTAT')
+plt.ylabel('MEDV')
+plt.show()
+```
+
+<img src="contents/lstat_graph.png" alt="LSTAT relation" width="827" height="550">
+
+```python
+plt.scatter(boston['RM'], boston['MEDV'], marker='o')
+plt.title("RM")
+plt.xlabel('RM')
+plt.ylabel('MEDV')
+plt.show()
+```
+
+<img src="contents/rm_graph.png" alt="RM relation" width="827" height="550">
+
+That's it.
