@@ -64,6 +64,6 @@ plt.show()
 
 We see that the values of MEDV are distributed normally with few outliers.
 
-<img src="..\contents\exploratory_medv" alt="MEDV Output" width="400" height="400">
+<img src="contents\exploratory_medv" alt="MEDV Output" width="400" height="400">
 
 That's it.
