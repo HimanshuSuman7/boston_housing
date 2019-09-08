@@ -54,3 +54,16 @@ MEDV: Median value of owner-occupied homes in $1000s
 ```
 
 Now, we will use some visualizations to understand the relationship of the target variable with other features. We will use _displot_ function from the _seaborn_ library.
+```python
+sns.set(rc={
+    'figure.figsize': (11.7, 8.27)
+})
+sns.distplot(boston['MEDV'], bins=30)
+plt.show()
+```
+
+We see that the values of MEDV are distributed normally with few outliers.
+
+![MEDV Output](/contents/exploratory_medv.png)
+
+Thats it.
