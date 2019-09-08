@@ -92,7 +92,7 @@ plt.ylabel('MEDV')
 plt.show()
 ```
 
-<img src="contents/lstat_graph.png" alt="LSTAT relation" width="827" height="550">
+<img src="contents/lstat_graph.png" alt="LSTAT relation" width="500" height="300">
 
 ```python
 plt.scatter(boston['RM'], boston['MEDV'], marker='o')
