@@ -36,7 +36,7 @@ Here,
 4. _DESCR_: describes the dataset
 
 The description of all the features is given below:
-```python
+```
 CRIM: Per capita crime rate by town
 ZN: Proportion of residential land zoned for lots over 25,000 sq. ft
 INDUS: Proportion of non-retail business acres per town
