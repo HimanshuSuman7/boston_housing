@@ -83,7 +83,7 @@ The degree of association depends on the coefficient of correlation (r) which is
 * An important point in selecting features for a linear regression model is to check for multi-co-linearity. The features RAD, TAX have a correlation of 0.91. These feature pairs are strongly correlated to each other. We should not select both these features together for training the model. Check this for an explanation. Same goes for the features DIS and AGE which have a correlation of -0.75.
 * DIS with a correlation of 0.25 rises with plotted against MEDV and shows no increase later in the same graph. This provides an additional parameter to judge the prices of the house.
 
-Based on the above observations we will RM and LSTAT as our features. Using a scatter plot let’s see how these features vary with MEDV.
+Based on the above observations we will LSTAT, RM and DIS as our features. Using a scatter plot let’s see how these features vary with MEDV.
 
 ```python
 plt.scatter(boston['LSTAT'], boston['MEDV'], marker='o')
@@ -154,3 +154,7 @@ print("Model performance for training set.\n",
 ### Results
 
 <img src="contents/result.png" alt="Output">
+
+So concluding, we used only LSTAT, RM and DIS to predict the house prices in Boston based on our observations from the correlation matrix and the behaviour of the feature with respect to the target. The prediction can vary with different features. 
+
+That's it.
