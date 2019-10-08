@@ -1,8 +1,8 @@
 # Boston Housing
-# Linear Regression
+### Linear Regression
 Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting.
 
-# About the Dataset
+### About the Dataset
 I have used housing dataset from Scikit - Learn library which contains information about different houses in Boston. There are 506 samples and 13 feature variables in the dataset. The objective is to predict the value of the prices of the houses using the given features.
 
 ```
@@ -33,7 +33,7 @@ LSTAT: Percentage of lower status of the population
 MEDV: Median value of owner - occupied homes in $1000s
 ```
 
-# Required Imports
+### Required Imports
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
